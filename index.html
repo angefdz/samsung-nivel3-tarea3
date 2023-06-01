@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Reproductor de vídeo</title> 
+</head>
+<body>
+	<div style="text-align:center;">
+    <video id="video" width="480" height="360" center controls>
+        <source src="" type="video/mp4">
+    </video>
+	</div>
+    <center>
+    <button onclick="playVideo()">Cargar video</button>
+	<button onclick="resumeVideo()">Reanudar</button>
+    <button onclick="pauseVideo()">Detener</button>
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.1" onchange="changeVolume()">
+    <div  id="loadingMessage" style="display:none">Cargando video...</div>
+    <center>
+	<script src="script.js"></script>
+</body>
+</html>
